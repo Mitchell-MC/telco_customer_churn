@@ -145,7 +145,4 @@ Data Dictionary:
 Data Quality and Preliminary Findings
 
     Data Cleaning: Handled missing values in 'Total Charges'.
-    Key Insights:
-        Shorter tenure and higher monthly charges are associated with higher churn rates.
-        Services like online security reduce churn risk.
-        Demographic factors (like being a senior citizen) influence churn likelihood.
+    
