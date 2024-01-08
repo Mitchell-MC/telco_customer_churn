@@ -1,5 +1,7 @@
 # telco_customer_churn
 
+*These notes have been provided within the python notebook, check the notebook for added context.* 
+
 # **Introduction**
 An organization loses its customers to its competition for various reasons. What mainly attracts customers to go ahead with a shift is attributed to the price of the product and its quality. This is true for the Telecom industry as well. A churn of 10 to 60 percent in any company is a big number that can affect the company’s overall growth.
 
@@ -255,21 +257,31 @@ The method provides a direct interpretation of boosting in terms of numerical o
 ### **XG Boost**
 
 
+## Business Overview and Aim
 
+**The project aims** to predict customer churn in the telecommunications industry, a rapidly evolving sector. The focus is on developing a model to predict churn and emphasizing continuous model improvement and adaptability to changes in data.
+Understanding Churn Prediction
 
-To improve upon the first decision tree, we can use XGBoost. Here's a roadmap for it:
+**Churn prediction**  is crucial for telecom companies due to its direct impact on revenue and competitive positioning. The project highlights the importance of understanding customer behaviors and reasons for churn.
+Key Challenges
 
-* Initialize the model: We start by initializing the XGBoost model with default hyperparameters. This model will be a simple decision tree with a single split.
+**The project** tackles challenges like analyzing vast, diverse data sources and understanding varied customer behaviors.
+Impact on Business
 
-* Make predictions: We use this model to make predictions on the training data. We compare these predictions to the true labels and calculate the residuals, which are the differences between the predicted values and the true labels.
+**The model** impacts business operations by aiding in revenue protection, customer retention, cost reduction, and gaining a competitive edge.
+Approach
 
-* Fit a new tree: We then fit a new decision tree to the residuals. This tree will be a weak learner, as it is only modeling the errors of the previous model.
+**The approach** involves comprehensive steps like data exploration, preprocessing, model training with various algorithms (logistic regression, random forest, XGBoost), and monitoring for data drift.
+Data Drift Monitoring
 
-* Combine the models: We add the new tree to the previous model to create a new ensemble. This new ensemble consists of the previous model plus the new tree.
+**Monitoring for changes** in data distribution (data drift) and the relationship between data and labels (concept drift) is emphasized to maintain model accuracy.
+Inference Pipeline
 
-* Repeat: We repeat steps 2-4 for a specified number of iterations, adding a new tree to the ensemble each time.
+The inference pipeline is crucial in real-world applications to ensure sustained model accuracy over time, with different strategies based on the availability of labels.
 
-* Predictions: To make predictions on new data, we combine the predictions of all the trees in the ensemble.
+**Observations and Future Work** The model shows a moderate level of accuracy in distinguishing between churn and non-churn customers. Future work could focus on improving results by retraining the model and exploring other machine learning techniques.
+
+This comprehensive project serves as a robust framework for addressing the churn prediction challenge in the telecommunications industry, balancing technical model development with business insights and real-world applicability.
 
 ## Classification Evaluation Metrics
 
